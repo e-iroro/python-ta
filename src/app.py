@@ -3,7 +3,14 @@ import os
 
 
 def prime(s):
-    # your code goes here
+    a = int(s)
+    if a >= 1:  
+        for n in range(2,a):  
+            if (a % n) == 0:  
+                return False
+        return True
+    else:
+        return False
 
 def solution(s):
     return prime(s)
